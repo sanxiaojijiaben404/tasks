@@ -62,7 +62,8 @@
     ```
 
 * 回退版本
- ULR:
+  
+  ULR:
   https://www.picgo.net/image/QQ20251112-195636.UOEZhN
 
 
@@ -92,7 +93,8 @@
 
 > 这个有点复杂，直接上图片
 
-![Screenshot_2025_1114_122924](D:\install_file\QQ\Screenshot_2025_1114_122924.jpg)
+ULR:
+
 
 * ```
   git clone repo-address//克隆仓库
@@ -113,7 +115,8 @@
 
   * 分支冲突
 
-    ![QQ20251114-130324](D:\install_file\QQ\QQ20251114-130324.png)
+    ULR:
+    https://www.picgo.net/image/QQ20251114-130324.UOEYsj
 
   
 
@@ -126,6 +129,7 @@
 [廖雪峰的 Git 教程]([简介 - Git教程 - 廖雪峰的官方网站](https://liaoxuefeng.com/books/git/introduction/index.html))
 
 [Google]([Google](https://www.google.com.hk/))
+
 
 
 
