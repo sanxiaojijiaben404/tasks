@@ -64,8 +64,7 @@
 * 回退版本
   
   ULR:
-  https://www.picgo.net/image/QQ20251112-195636.UOEZhN
-
+ https://raw.githubusercontent.com/sanxiaojijiaben404/picture/main/Screenshot_20251111_131113.jpg
 
   
 
@@ -129,6 +128,7 @@ ULR:
 [廖雪峰的 Git 教程]([简介 - Git教程 - 廖雪峰的官方网站](https://liaoxuefeng.com/books/git/introduction/index.html))
 
 [Google]([Google](https://www.google.com.hk/))
+
 
 
 
