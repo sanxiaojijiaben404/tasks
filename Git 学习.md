@@ -85,8 +85,8 @@
     del 文件名  //删除文件
     ```
 
-​           ![QQ20251112-195636](D:\install_file\QQ\QQ20251112-195636.png)     
-
+​ULR:  
+https://raw.githubusercontent.com/sanxiaojijiaben404/picture/main/QQ20251112-195636.png
 > 这个听了几遍也没完全理解
 
 * SSH的配置
@@ -94,7 +94,7 @@
 > 这个有点复杂，直接上图片
 
 ULR:
-
+https://raw.githubusercontent.com/sanxiaojijiaben404/picture/main/Screenshot_2025_1114_122924.jpg
 
 * ```
   git clone repo-address//克隆仓库
@@ -115,9 +115,8 @@ ULR:
 
   * 分支冲突
 
-    ULR:
-    https://www.picgo.net/image/QQ20251114-130324.UOEYsj
-
+  ULR:
+  https://raw.githubusercontent.com/sanxiaojijiaben404/picture/main/QQ20251114-130324.png
   
 
 参考：
@@ -129,6 +128,7 @@ ULR:
 [廖雪峰的 Git 教程]([简介 - Git教程 - 廖雪峰的官方网站](https://liaoxuefeng.com/books/git/introduction/index.html))
 
 [Google]([Google](https://www.google.com.hk/))
+
 
 
 
