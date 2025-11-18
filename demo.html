@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html practice</title>
+</head>
+<style>
+    
+        *{
+            font-family: kaiti;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #bed7f5;
+            margin: 20px;
+        }
+        h1 {
+            color: #34a853; /* 绿色标题 */
+        }
+        h2 {
+            color: #fbbc05; /* 黄色副标题 */
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            padding: 8px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4285f4; /* 蓝色按钮 */
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #357ae8; /* 按钮悬停效果 */
+        }
+img { 
+            border: 3px solid #4285f4; /* 蓝色边框 */
+            border-radius: 10px; /* 圆角效果 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* 阴影增加层次感 */
+            transition: all 0.3s; /* 过渡动画，hover更丝滑 */
+        }
+        img:hover {
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* 鼠标悬停时增加阴影效果 */
+            transform: scale(1.05); /* 鼠标悬停时放大图片 */
+        }
+</style>
+<body>
+    <h1>汝乃何许人也</h1>
+    <h2>报上名来</h2>
+    <form name="input" action="html_form_action.php" method="get">
+名字: <input type="text" name="user">
+<input type="submit" value="Submit">
+    </form>
+    <p>其实你不写我也无可奈何，因为我还不会做提交之后跳转页面</p>
+    <p>看个照片</p>
+    <img src="https://raw.githubusercontent.com/sanxiaojijiaben404/picture/main/20251027231911_1.jpg" alt="图片加载失败">
+    <p>哎呀，太小了，我都看不清，放大一点吧</p>
+    <img src="https://raw.githubusercontent.com/sanxiaojijiaben404/picture/main/20251027231911_1.jpg" alt="图片加载失败" width="1200" height="600">
+    <button onclick="changeText()">点击我</button>
+    <div id="text">等待点击...</div>
+    <script>
+        function changeText() {
+            const textElement = document.getElementById('text');
+            textElement.textContent = "按钮被点击啦！没想到吧，仍然不是跳转页面~";
+            textElement.style.color = "#ea4335";
+        }
+    </script>
+</body>
+</html>
