@@ -10,5 +10,5 @@
 * [HTML标签](https://github.com/sanxiaojijiaben404/tasks/blob/main/HTML%E6%A0%87%E7%AD%BE.md)
 * [CSS学习](https://github.com/sanxiaojijiaben404/tasks/blob/main/CSS%E5%AD%A6%E4%B9%A0.md)
 * [JavaScript](https://github.com/sanxiaojijiaben404/tasks/blob/main/JavaScript.md)
-* [demo.html](https://github.com/sanxiaojijiaben404/tasks/blob/main/demo.html) 链接在此(http://127.0.0.1:5500/demo.html)
+* 链接在此https://sanxiaojijiaben404.github.io/
 * [编后感](https://github.com/sanxiaojijiaben404/tasks/blob/main/%E7%BC%96%E5%90%8E%E6%84%9F.md)
