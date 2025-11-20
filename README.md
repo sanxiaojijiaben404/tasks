@@ -11,5 +11,5 @@
 * [CSS学习](https://github.com/sanxiaojijiaben404/tasks/blob/main/CSS%E5%AD%A6%E4%B9%A0.md)
 * [JavaScript](https://github.com/sanxiaojijiaben404/tasks/blob/main/JavaScript.md)
 * 又优化了一下，链接在此https://sanxiaojijiaben404.github.io/
-  愿意看码的话请移步[隔壁仓库](https://github.com/sanxiaojijiaben404/sanxiaojijiaben404.github.io/blob/main/index.html)
+  愿意看码的话请移步[index.html](https://github.com/sanxiaojijiaben404/tasks/blob/main/index.html)
 * [编后感](https://github.com/sanxiaojijiaben404/tasks/blob/main/%E7%BC%96%E5%90%8E%E6%84%9F.md)
