@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>江湖问名 - 汝乃何许人也</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "楷体", "STKaiti", "SimSun", serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 2px solid #34a853;
+            padding-bottom: 20px;
+        }
+        
+        h1 {
+            color: #2e7d32;
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #f57c00;
+            font-size: 1.8rem;
+            font-weight: normal;
+        }
+        
+        .form-section {
+            background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border-left: 5px solid #4caf50;
+        }
+        
+        form {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        input[type="text"] {
+            flex: 1;
+            min-width: 200px;
+            padding: 12px 20px;
+            border: 2px solid #81c784;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        
+        input[type="text"]:focus {
+            border-color: #2e7d32;
+            box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+        }
+        
+        input[type="submit"] {
+            background: linear-gradient(135deg, #4285f4, #34a853);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(66, 133, 244, 0.3);
+        }
+        
+        input[type="submit"]:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(66, 133, 244, 0.4);
+            background: linear-gradient(135deg, #357ae8, #2e7d32);
+        }
+        
+        .tips {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #ff9800;
+            font-style: italic;
+        }
+        
+        .image-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        .image-container {
+            display: inline-block;
+            margin: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        img {
+            border: 4px solid #4285f4;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transition: all 0.4s ease;
+            max-width: 100%;
+            height: auto;
+        }
+        
+        img:hover {
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+            transform: scale(1.03);
+            border-color: #ea4335;
+        }
+        
+        .button-section {
+            text-align: center;
+            margin: 40px 0;
+        }
+        
+        button {
+            background: linear-gradient(135deg, #ea4335, #fbbc05);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(234, 67, 53, 0.3);
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(234, 67, 53, 0.4);
+            background: linear-gradient(135deg, #d33426, #e6a800);
+        }
+        #text {
+            margin-top: 20px;
+            padding: 20px;
+            background: linear-gradient(135deg, #fce4ec, #f3e5f5);
+            border-radius: 10px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-align: center;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.5s ease;
+            border: 2px dashed #9c27b0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        
+        /* 响应式设计 多谢deepseek的大力支持*/
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            h2 {
+                font-size: 1.4rem;
+            }
+            
+            form {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            input[type="text"] {
+                min-width: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>汝乃何许人也</h1>
+            <h2>报上名来</h2>
+        </div>
+        
+        <div class="form-section">
+            <form name="input" action="html_form_action.php" method="get">
+                <input type="text" name="user" placeholder="在此输入尊姓大名...">
+                <input type="submit" value="提交名帖">
+            </form>
+        </div>
+        
+        <div class="tips">
+            <p>📜 其实你不写我也无可奈何，因为我还不会做提交之后跳转页面</p>
+        </div>
+        
+        <div class="image-section">
+            <p>🖼️ 看个照片</p>
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/sanxiaojijiaben404/picture/main/20251027231911_1.jpg" alt="江湖风景" width="400">
+            </div>
+            <p>🔍 哎呀，太小了，我都看不清，放大一点吧</p>
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/sanxiaojijiaben404/picture/main/20251027231911_1.jpg" alt="江湖风景（大图）" width="800">
+            </div>
+        </div>
+        
+        <div class="button-section">
+            <button onclick="changeText()">点击我试试</button>
+            <div id="text">等待点击中... ⌛</div>
+        </div>
+        <div class="tips">
+        <p>感谢菜鸟教程，哔哩哔哩，谷歌，deepseek，豆包，w3school 在线教程的大力支持！
+            特别鸣谢vscode，在我打出一个尖括号时就能“猜你所想”，特别好用啊特别好用，我不会的它都会。</p>
+        </div>
+        <div class="footer">
+            <p>✨ 江湖问名 · 有缘相见 ✨</p>
+        </div>
+    </div>
+
+    <script>
+        function changeText() {
+            const textElement = document.getElementById('text');
+            textElement.textContent = "🎉 按钮被点击啦！没想到吧，仍然不是跳转页面~";
+            textElement.style.color = "#d33426";
+            textElement.style.background = "linear-gradient(135deg, #e8f5e9, #f1f8e9)";
+            textElement.style.border = "2px solid #4caf50";
+            
+            // 添加一点动画效果 这个仍然感谢deepseek
+            textElement.style.transform = "scale(1.05)";
+            setTimeout(() => {
+                textElement.style.transform = "scale(1)";
+            }, 300);
+        }
+    </script>
+</body>
+</html>
+```
+
